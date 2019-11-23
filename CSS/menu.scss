@@ -1,0 +1,24 @@
+@import "style.scss";
+
+.content_title_text {
+    color:$primary_color;
+    width:100vw;
+    margin-top:0;
+    margin-bottom:2vh;
+    padding-top:2vh;
+    font-size:20pt;
+    text-align:center;
+}
+#content_starters{
+    display:grid;
+    width:100vw;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    column-gap: 5vw;
+}
+.content_starters_pictures {
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+

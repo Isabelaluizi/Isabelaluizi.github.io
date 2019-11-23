@@ -1,0 +1,40 @@
+@import "style.scss";
+
+#content_title_text {
+    color:$primary_color;
+    width:100vw;
+    margin-top:0;
+    margin-bottom:2vh;
+    padding-top:2vh;
+}
+
+#content_picture1 {
+    width:70%;
+    display:block;
+    margin:auto;
+    margin-bottom: 5vh;
+}
+
+.content_text {
+    margin-top: 3vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom: 2vh;
+    text-align: justify;
+    font-size: 14pt;
+}
+#content_text_style {
+    border-top:1px solid;
+  box-shadow: 2px 4px 2px 4px black;
+  width:80vw;
+  margin-top: 3vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom: 2vh;
+    padding-bottom: 3vh;   
+}
+.content_restaurant_picture {
+    width:100vw;
+    margin-bottom: 5vh;
+}
+
