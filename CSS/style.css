@@ -118,10 +118,10 @@ body {
   background-color: #d10c00;
   margin-top: 5vh;
   font-size: 12pt;
+  width: 100vw;
 }
 
 .footer_link {
-  margin-left: 4vw;
   color: white;
   text-decoration: none;
 }
@@ -139,7 +139,6 @@ body {
 #footer p {
   font-size: 8pt;
   color: black;
-  margin-left: 4vw;
 }
 
 @media (min-width: 1025px) {

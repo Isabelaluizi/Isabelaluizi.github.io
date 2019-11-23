@@ -1,6 +1,6 @@
 @import "style.scss";
 
-.content_title_text {
+#content_title_starters {
     color:$primary_color;
     width:100vw;
     margin-top:0;
@@ -8,17 +8,198 @@
     padding-top:2vh;
     font-size:20pt;
     text-align:center;
+    text-decoration: underline;
 }
-#content_starters{
-    display:grid;
+#content_menu_style {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);  
+}
+#content_menu_intro {
+    background-image: url("../images/Friends-eating-pizza.jpg");
+    background-size:100vw;
+    height: 35vh;
+}
+#content_menu_text {
+    font-size:40px;
+    color:white;
+    text-align: center;
+    padding-top:10vh;
+    padding-bottom:8vh;
+}
+.content_menu_links {
     width:100vw;
+    text-align: center;
+    color:white;
+    margin-left:12vw;
+    margin-bottom:0;
+    text-decoration: none;
+    &:hover {
+        font-weight: bold;
+    }
+}
+#menu_container {
+    background-color:white;
+    border-radius: 30px;
+    position:relative;
+    top:-5vh;
+}
+#content_starters {
+    display:grid;
+    width:90vw;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     column-gap: 5vw;
+    margin-left:5vw;
+    margin-right:5vw;
 }
 .content_starters_pictures {
     width:100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 40px;
+    margin-bottom:1vh;
 }
+.content_starters_text {
+    margin-bottom: 4vh;
+}
+#content_title_pizzas {
+    color:$primary_color;
+    width:100vw;
+    margin-top:0;
+    margin-bottom:2vh;
+    padding-top:2vh;
+    font-size:20pt;
+    text-align:center;
+    text-decoration: underline;
+}
+#content_pizzas {
+    display:grid;
+    width:90vw;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    column-gap: 5vw;
+    margin-left:5vw;
+    margin-right:5vw;
+}
+.content_pizzas_pictures {
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-bottom:1vh;
+}
+
+.content_pizzas_text {
+    margin-bottom: 4vh;
+}
+#content_title_desserts {
+    color:$primary_color;
+    width:100vw;
+    margin-top:0;
+    margin-bottom:2vh;
+    padding-top:2vh;
+    font-size:20pt;
+    text-align:center;
+    text-decoration: underline;
+}
+#content_desserts {
+    display:grid;
+    width:90vw;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    column-gap: 5vw;
+    margin-bottom:1vh;
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+.content_desserts_pictures {
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.content_desserts_text {
+    margin-bottom: 4vh;
+}
+
+.menu_name {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left:1vw;
+}
+.menu_description {
+    color:grey;
+    font-size: 10pt;
+    margin-left:1vw;
+}
+.menu_price {
+    color:$primary_color;
+    font-size: 12pt;
+    margin-left:80%;
+}
+@media (max-width:3000px) and (min-width:1036px) {
+
+    #content_menu_intro {
+        background-image: url("../images/Friends-eating-pizza.jpg");
+        background-size:100vw;
+        height: 60vh;
+    }
+
+    #content_menu_text {
+        padding-bottom:25vh;
+        font-size:60pt;
+    }
+
+    .content_menu_links {
+    margin-left:20vw;
+    font-size:20pt;
+    }
+}
+@media (min-width:1024px) and (max-width:1035px) {
+    #content_menu_text {
+        font-size:50px;
+        color:white;
+        text-align: center;
+        padding-top:10vh;
+        padding-bottom:12vh;
+    }
+    .content_menu_links {
+    width:100vw;
+    text-align: center;
+    margin-left:20vw;
+    font-size:20pt;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    #content_menu_text {
+        font-size:40px;
+        color:white;
+        text-align: center;
+        padding-top:10vh;
+        padding-bottom:10vh;
+    }
+    .content_menu_links {
+    width:100vw;
+    text-align: center;
+    margin-left:15vw;
+    font-size:18pt;
+    }
+}
+@media (min-width:375px) and (max-width:414px) {
+    #content_menu_text {
+        font-size:40px;
+        color:white;
+        text-align: center;
+        padding-top:5vh;
+        padding-bottom:12vh;
+    }
+    #menu_container {
+        background-color:white;
+        border-radius: 30px;
+        position:relative;
+        top:-9vh;
+    }
+}
+
 
 

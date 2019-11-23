@@ -19,17 +19,15 @@
     margin-top: 3vh;
     margin-left:10vw;
     margin-right:10vw;
-    margin-bottom: 2vh;
+    padding-bottom:2vh;
     text-align: justify;
     font-size: 14pt;
 }
 #content_text_style {
-    border-top:1px solid;
-  box-shadow: 2px 4px 2px 4px black;
-  width:80vw;
+  width:95vw;
   margin-top: 3vh;
-    margin-left:10vw;
-    margin-right:10vw;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
     margin-bottom: 2vh;
     padding-bottom: 3vh;   
 }
@@ -37,4 +35,4 @@
     width:100vw;
     margin-bottom: 5vh;
 }
-
+@media (min-width:1025px) {

@@ -102,9 +102,9 @@ body {
     background-color:$headerfooter_color;
     margin-top: 5vh;
     font-size: 12pt;
+    width:100vw;
 }
 .footer_link {
-    margin-left: 4vw;
     color:$content_text_color;
     text-decoration:none;
     &:hover {
@@ -119,10 +119,11 @@ body {
 #footer {
     p {
         font-size: 8pt; color: black;
-        margin-left: 4vw;
     }
    
 }
+
+
 @media (min-width:1025px) {
     #header_logo {
         width: 15%;
