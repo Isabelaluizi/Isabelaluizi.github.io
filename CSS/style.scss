@@ -23,41 +23,40 @@ body {
 #header {
     display:grid;
     width:100vw;
-    grid-template-columns: repeat(auto-fill, minmax(80px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(80px,30vw));
     justify-items: center;
     align-items: center;
     position: sticky;
-    column-gap: 10vw;
+    column-gap: 3vw;
     top:0;
     left:0;
     background-color: $headerfooter_color;  
 }
 #header_logo {
     width: 75%;
-    margin-left:2vw;
     margin-top:1vh;
 }
 #content_part1 {
     background-image: url("../images/Pizza7.png");
-    width:100vw;
-    height: 60vh;
+    background-size:100vw;
+    height: 33vh;
     
 }
 #content_style {
     width:100%;
     height:100%;
-    background-color: rgba(0,0,0,0.6);  
+    background-color: rgba(0,0,0,0.73);  
 }
 .header_link {
     color: $content_text_color; 
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
     #header_tel {
         color: $content_text_color; font-size: 10px; font-weight: 900;
         text-decoration:none;
     }
     &:hover {
-    color: blue; 
+    font-weight: bold; 
     text-decoration:none;
     }
     &:active {
@@ -70,8 +69,7 @@ body {
    font-size: 25pt;
    font-weight: bold;
    text-align:center;
-   padding-top:10vh;
- 
+   padding-top:7vh;
  
 }
 #content_sub_text {
@@ -80,22 +78,69 @@ body {
     color: white;
     text-align:center;
     font-weight: bold;
+    margin-bottom:2vh;
   
+}
+
+#content_link_menu {
+    border-radius: 3px;
+    margin-left:40vw;
+    font-size:25px;
+    text-decoration:none;
+    color:white;
+    background-color: $primary_color;
+    padding:3px;
+    border-radius:4px;
+    border: 2px solid;
+    border-color:#f1d6ad;
+    &:hover {
+        font-weight:bold;
+    }
+
 }
 .content_pizza_text {
     color: $primary_color;
     font-size: 15pt;
     font-weight: bold;
     text-align:center;
-    margin-top: 10vh;
+    margin-top:5vh;
  }
+
+ #content_title_picture {
+    color: $primary_color;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 10vh;
+    margin-left:5vw;
+ }
+ #content_part2 {
+     display:grid;
+     width:100vw;
+     grid-template-columns: 50vw 50vw;
+     grid-template-rows:1fr;
+     justify-content: center;
+     align-items: center;
+ }
+ #content_pizza_hours {
+    color: $primary_color;
+    font-size: 15pt;
+    font-weight: bold;
+    text-align:center;
+    margin-top:5vh;
+ }
+
  #content_pizza_picture {
-    width: 100vw;
-    margin-bottom: 5vh;
+    width:50vw;
+    float:left;
+    margin-left:3vw;
+    margin-right:3vw;
 }
+
  #content_video {
-    width: 100vw;
-    height: 40vh;
+    width: 90vw;
+    height: 35vh;
+    margin-left:5vw;
+    margin-left:5vw;
 }
 
 #footer {
@@ -103,12 +148,17 @@ body {
     margin-top: 5vh;
     font-size: 12pt;
     width:100vw;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px,25vw));
+    justify-items: center;
+    align-items: center;
+
 }
 .footer_link {
     color:$content_text_color;
     text-decoration:none;
     &:hover {
-        color: blue; 
+        font-weight: bold;
         text-decoration:none;
         }
         &:active {
@@ -122,7 +172,6 @@ body {
     }
    
 }
-
 
 @media (min-width:1025px) {
     #header_logo {
@@ -150,6 +199,13 @@ body {
     .header_link {
         font-size: 23px;
     }
+    #header_tel {
+        display:none;
+    }
+    #header_tel_fullscreen {
+        color: $content_text_color; 
+    font-size: 23px;
+    }
     #content_part1 {
         width:100vw;
         height: 80vh;
@@ -159,7 +215,14 @@ body {
         display:block;
         margin:auto;
         width: 60%;
-
+        margin-left:20vw;
+    }
+    #content_pizza_hours {
+        margin-right:5vw;
+        font-size:40px;
+    }
+    #content_part2 {
+        grid-template-columns: 30vw 70vw;
     }
     #content_video {
         width:560;
@@ -181,6 +244,117 @@ body {
             margin-left: 0vw;
         }
     }  
+    #content_title_text {
+        font-size: 60pt;
+        padding-top:25vh;
+      
+     }
+     #content_sub_text {
+         font-size: 30pt;
+         margin-bottom:5vh;
+       
+     }
+     #content_link_menu {
+        margin-left:45vw;
+        font-size:20pt;
+        padding:14px;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #header {
+        display:grid;
+        width:100vw;
+        grid-template-columns: 15vw 10vw 10vw 15vw 10vw 20vw;
+        grid-template-rows: 1fr;
+        column-gap:4vw;
+        justify-items: center;
+        align-items: center;
+        position: sticky;
+        top:0;
+        left:0;
+        background-color: $headerfooter_color;  
+    }
+    .header_link {
+        font-size: 24px;
+    }
+    #header_logo {
+        width: 90%;
+        margin-top:1vh;
+    }
+    #header_tel {
+        display:none;
+    }
+    #header_tel_fullscreen {
+        color: $content_text_color; 
+    font-size: 23px;
+    }
+    .content_pizza_text {
+        font-size: 45px;
+        margin-top:10vh;
+    }
+    #content_title_text {
+        font-size: 60px;
+        padding-top:10vh;
+    }
+    #content_sub_text {
+        font-size:30px;
+    }
+    #content_link_menu {
+        margin-left:43vw;
+        font-size:40px;
+        padding:5px;
+    }
+    #content_pizza_picture {
+        display:block;
+        margin:auto;
+        width: 80%;
+        margin-left:10vw;
+    }
+    #content_pizza_hours {
+        margin-right:5vw;
+        font-size:40px;
+    }
+    #content_part2 {
+        grid-template-columns: 40vw 60vw;
+    }
+}
+@media (max-width:767px) {
+    #header_tel_fullscreen {
+        display:none;
+    }
+}
+
+@media (max-width:320px) {
+    #header {
+        display:grid;
+    width:100vw;
+    grid-template-columns: 30vw 25vw 40vw;
+    grid-template-rows: 10vh 5vh;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: $headerfooter_color; 
+    } 
+    #header_logo {
+        width: 70%;
+        margin-top:1vh;
+    }
+    #header_tel_fullscreen {
+        display:none;
+    }
+    #content_title_text {
+        font-size: 29px;
+    }
+    #content_sub_text {
+        font-size:15px;
+    }
+    #content_link_menu {
+        font-size:15px;
+    }
 }
 
 

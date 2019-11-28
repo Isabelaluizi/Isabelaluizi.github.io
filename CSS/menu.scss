@@ -1,19 +1,25 @@
-@import "style.scss";
+@import "style";
 
 #content_title_starters {
     color:$primary_color;
-    width:100vw;
+    width:70vw;
     margin-top:0;
     margin-bottom:2vh;
     padding-top:2vh;
     font-size:20pt;
     text-align:center;
-    text-decoration: underline;
+    border-bottom: 2px solid;
+    margin-bottom: 5vh;
+    margin-left:15vw;
 }
+#header {
+    z-index:20;
+}
+
 #content_menu_style {
     width:100%;
     height:100%;
-    background-color: rgba(0,0,0,0.4);  
+    background-color: rgba(0,0,0,0.55);  
 }
 #content_menu_intro {
     background-image: url("../images/Friends-eating-pizza.jpg");
@@ -64,13 +70,15 @@
 }
 #content_title_pizzas {
     color:$primary_color;
-    width:100vw;
+    width:70vw;
     margin-top:0;
     margin-bottom:2vh;
     padding-top:2vh;
     font-size:20pt;
     text-align:center;
-    text-decoration: underline;
+    border-bottom: 2px solid;
+    margin-bottom: 5vh;
+    margin-left:15vw;
 }
 #content_pizzas {
     display:grid;
@@ -93,13 +101,15 @@
 }
 #content_title_desserts {
     color:$primary_color;
-    width:100vw;
+    width:70vw;
     margin-top:0;
     margin-bottom:2vh;
     padding-top:2vh;
     font-size:20pt;
     text-align:center;
-    text-decoration: underline;
+    border-bottom: 2px solid;
+    margin-bottom: 5vh;
+    margin-left:15vw;
 }
 #content_desserts {
     display:grid;

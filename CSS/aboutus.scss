@@ -1,38 +1,90 @@
-@import "style.scss";
+@import "style";
 
 #content_title_text {
     color:$primary_color;
     width:100vw;
     margin-top:0;
     margin-bottom:2vh;
-    padding-top:2vh;
+    padding-top:5vh;
 }
 
 #content_picture1 {
-    width:70%;
-    display:block;
-    margin:auto;
-    margin-bottom: 5vh;
+    width:45%;
+    float:left;
+    margin-left:2vw;
+    margin-right:3vw;
 }
 
 .content_text {
+    width:90vw;
+    margin-left:5vw;
     margin-top: 3vh;
-    margin-left:10vw;
-    margin-right:10vw;
     padding-bottom:2vh;
-    text-align: justify;
     font-size: 14pt;
 }
-#content_text_style {
-  width:95vw;
-  margin-top: 3vh;
-    margin-left:2.5vw;
-    margin-right:2.5vw;
-    margin-bottom: 2vh;
-    padding-bottom: 3vh;   
-}
+
 .content_restaurant_picture {
     width:100vw;
     margin-bottom: 5vh;
 }
+
 @media (min-width:1025px) {
+    #content_picture1 {
+        width:25%;
+        margin-left:5vw;
+    }
+    .content_text {
+        width:90%;
+        margin-left:5vw;
+        margin-right:5vw;
+        margin-top: 0vh;
+        text-align: justify;
+        font-size: 15pt;
+    }
+    #content_text_style {
+      width:90%;
+      margin-top: 0vh;  
+    }
+    #content_restaurant {
+        display:grid;
+        width:100vw;
+        grid-template-columns: 35vw 35vw;
+        grid-template-rows: 40vh 40vh;  
+        row-gap: 10vh;
+        column-gap: 5vw;
+        margin-bottom:5vh;
+        margin-bottom:8vh;
+    }
+    #content_title_text {
+        margin-bottom: 10vh;
+    }
+    .content_restaurant_picture {
+        width:100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left:15vw;
+    }
+
+
+}
+@media (min-width:768px) and (max-width:1024px) {
+    #content_picture1 {
+        width:40%;
+        margin-left:5vw;
+    }
+    .content_text {
+        width:90%;
+        margin-left:5vw;
+        margin-right:5vw;
+        margin-top: 0vh;
+        text-align: justify;
+        font-size: 15pt;
+    }
+    #content_text_style {
+      width:90%;
+      margin-top: 0vh;
+        padding-bottom: 1vh;   
+    }
+    
+}
