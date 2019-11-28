@@ -174,8 +174,8 @@ body {
   width: 100vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(80px, auto))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+  -ms-grid-columns: (minmax(80px, 25vw))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(80px, 25vw));
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -276,18 +276,18 @@ body {
     font-size: 12pt;
     margin-left: 0vw;
   }
-  .content_title_text {
-    font-size: 40pt;
-    padding-top: 40vh;
+  #content_title_text {
+    font-size: 60pt;
+    padding-top: 25vh;
   }
   #content_sub_text {
-    font-size: 20pt;
-    margin-bottom: 8vh;
+    font-size: 30pt;
+    margin-bottom: 5vh;
   }
   #content_link_menu {
     margin-left: 45vw;
     font-size: 20pt;
-    padding: 5px;
+    padding: 14px;
   }
 }
 
@@ -332,7 +332,7 @@ body {
   }
   #content_title_text {
     font-size: 60px;
-    padding-top: 5vh;
+    padding-top: 10vh;
   }
   #content_sub_text {
     font-size: 30px;
