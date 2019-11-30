@@ -1,5 +1,10 @@
 @import "style";
 
+html {
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+
 #content_title_starters {
     color:$primary_color;
     width:70vw;
@@ -12,6 +17,8 @@
     margin-bottom: 5vh;
     margin-left:15vw;
 }
+
+
 #header {
     z-index:20;
 }
@@ -30,15 +37,15 @@
     font-size:40px;
     color:white;
     text-align: center;
-    padding-top:10vh;
+    padding-top:33%;
     padding-bottom:8vh;
 }
 .content_menu_links {
     width:100vw;
     text-align: center;
-    color:white;
-    margin-left:12vw;
-    margin-bottom:0;
+    color:black;
+    margin-left:12%;
+    margin-bottom:10vh;
     text-decoration: none;
     &:hover {
         font-weight: bold;
@@ -147,7 +154,7 @@
     font-size: 12pt;
     margin-left:80%;
 }
-@media (max-width:3000px) and (min-width:1036px) {
+@media (max-width:4000px) and (min-width:1036px) {
 
     #content_menu_intro {
         background-image: url("../images/Friends-eating-pizza.jpg");
@@ -156,12 +163,12 @@
     }
 
     #content_menu_text {
-        padding-bottom:25vh;
         font-size:60pt;
+        padding-top:22.5%;
     }
 
     .content_menu_links {
-    margin-left:20vw;
+    margin-left:20%;
     font-size:20pt;
     }
 }
@@ -170,13 +177,13 @@
         font-size:50px;
         color:white;
         text-align: center;
-        padding-top:10vh;
+        padding-top:35%;
         padding-bottom:12vh;
     }
     .content_menu_links {
     width:100vw;
     text-align: center;
-    margin-left:20vw;
+    margin-left:18%;
     font-size:20pt;
     }
 }
@@ -185,13 +192,12 @@
         font-size:40px;
         color:white;
         text-align: center;
-        padding-top:10vh;
         padding-bottom:10vh;
     }
     .content_menu_links {
     width:100vw;
     text-align: center;
-    margin-left:15vw;
+    margin-left:18%;
     font-size:18pt;
     }
 }
@@ -200,7 +206,7 @@
         font-size:40px;
         color:white;
         text-align: center;
-        padding-top:5vh;
+      
         padding-bottom:12vh;
     }
     #menu_container {

@@ -8,9 +8,12 @@ $content_text_color: white;
     padding:0;
     margin:0;
 }
+
 html {
     font-family:sans-serif;
+    scroll-behavior: smooth;
 }
+
 body {
     background-color:$background_color;
 }
@@ -84,15 +87,13 @@ body {
 
 #content_link_menu {
     border-radius: 3px;
-    margin-left:40vw;
+    margin-left:40%;
     font-size:25px;
     text-decoration:none;
     color:white;
     background-color: $primary_color;
     padding:3px;
     border-radius:4px;
-    border: 2px solid;
-    border-color:#f1d6ad;
     &:hover {
         font-weight:bold;
     }
@@ -103,7 +104,7 @@ body {
     font-size: 15pt;
     font-weight: bold;
     text-align:center;
-    margin-top:5vh;
+    margin-top:8vh;
  }
 
  #content_title_picture {
@@ -111,7 +112,7 @@ body {
     font-size: 12pt;
     font-weight: bold;
     margin-top: 10vh;
-    margin-left:5vw;
+    margin-left:8vw;
  }
  #content_part2 {
      display:grid;
@@ -120,6 +121,7 @@ body {
      grid-template-rows:1fr;
      justify-content: center;
      align-items: center;
+     padding-top: 5vh;
  }
  #content_pizza_hours {
     color: $primary_color;
@@ -146,13 +148,12 @@ body {
 #footer {
     background-color:$headerfooter_color;
     margin-top: 5vh;
-    font-size: 12pt;
+    font-size: 10pt;
     width:100vw;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(80px,25vw));
     justify-items: center;
     align-items: center;
-
 }
 .footer_link {
     color:$content_text_color;
@@ -186,9 +187,9 @@ body {
     #header {
         display:grid;
         width:100vw;
-        grid-template-columns: 15vw 10vw 10vw 10vw 10vw 15vw;
+        grid-template-columns: 15vw 15vw 15vw 15vw 20vw;
         grid-template-rows: 1fr;
-        column-gap:5vw;
+        column-gap:4vw;
         justify-items: center;
         align-items: center;
         position: sticky;
@@ -255,7 +256,7 @@ body {
        
      }
      #content_link_menu {
-        margin-left:45vw;
+        margin-left:45%;
         font-size:20pt;
         padding:14px;
     }
@@ -266,7 +267,7 @@ body {
     #header {
         display:grid;
         width:100vw;
-        grid-template-columns: 15vw 10vw 10vw 15vw 10vw 20vw;
+        grid-template-columns: 15vw 15vw 15vw 15vw 20vw;
         grid-template-rows: 1fr;
         column-gap:4vw;
         justify-items: center;
@@ -277,7 +278,7 @@ body {
         background-color: $headerfooter_color;  
     }
     .header_link {
-        font-size: 24px;
+        font-size: 28px;
     }
     #header_logo {
         width: 90%;
@@ -302,9 +303,9 @@ body {
         font-size:30px;
     }
     #content_link_menu {
-        margin-left:43vw;
         font-size:40px;
         padding:5px;
+        margin-left:42%;
     }
     #content_pizza_picture {
         display:block;
@@ -319,6 +320,15 @@ body {
     #content_part2 {
         grid-template-columns: 40vw 60vw;
     }
+    #footer { 
+        font-size: 20pt;
+    }
+    #footer { 
+        p {
+        font-size: 20pt;
+        }
+    }
+   
 }
 @media (max-width:767px) {
     #header_tel_fullscreen {
@@ -330,12 +340,11 @@ body {
     #header {
         display:grid;
     width:100vw;
-    grid-template-columns: 30vw 25vw 40vw;
+    grid-template-columns: 30vw 35vw 25vw;
     grid-template-rows: 10vh 5vh;
     justify-items: center;
     align-items: center;
     position: sticky;
-    top:0;
     left:0;
     background-color: $headerfooter_color; 
     } 

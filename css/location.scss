@@ -4,7 +4,7 @@
     color:black;
     font-size: 50pt;
     text-align: left;
-    margin-bottom:5vh;
+    margin-bottom:1vh;
 }
 
 #content_location {
@@ -21,6 +21,7 @@
     width:100%;
     height:80%;
     border-radius: 20px;
+    
 }
 
 #content_description_address {
@@ -29,6 +30,9 @@
 }
 
 @media (max-width:1025px) {
+    #content_title_text {
+        margin-top:5vh;
+    }
     #content_location {
         width:85vw;
         height: 70vh;
@@ -43,6 +47,10 @@
     #content_title_text {
         font-size: 30pt;
         margin-bottom:2vh;
+    }
+    #content_location {
+        padding-bottom:0vh;
+        height:50vh;
     }
 }
 @media (min-width:768px) and (max-width:1024px) {
