@@ -9,12 +9,12 @@
 
 #content_location {
     display:grid;
-    width:100vw;
+    width:80%;
     height:80vh;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 40% 40%;
     grid-template-rows: 1fr;
-    margin-left: 8vw;
-    column-gap: 2vw;
+    margin-left: 8%;
+    column-gap: 10%;
     padding-top:15vh;
 }
 #content_googlemaps {
@@ -34,7 +34,7 @@
         margin-top:5vh;
     }
     #content_location {
-        width:85vw;
+        width:85%;
         height: 70vh;
         display:block;
         padding-top:0vh;
@@ -55,7 +55,7 @@
 }
 @media (min-width:768px) and (max-width:1024px) {
     #content_location {
-        width:85vw;
+        width:85%;
         height: 70vh;
         display:block;
         padding-top:0vh;
